@@ -236,6 +236,18 @@ bool cellanalyer::operationbyte(int startpos,char* data,unsigned int datalen,int
         feildpos++;
 
     }
+    if(datapos>=datalen)
+    {
+        ret=false;  
+
+    }
+		
+    if(usehollen>datalen)
+    {
+
+        ret=false;  
+ 
+    }
     if(!ret)
     {
         return false;
